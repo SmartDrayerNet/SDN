@@ -66,9 +66,17 @@ conveyors, towers, dryers, ESP32 nodes — and a simulator. A plant is drawn onc
 
 ### Prototypes
 
-| First ESP32 node | Early 7" display | Critical alarm | Elevator RPM board (in progress) |
+| First ESP32 node | Early 7" display | Critical alarm | Elevator RPM board |
 |---|---|---|---|
 | ![Node in box](docs/images/proto_enclosure.jpg) | ![7 inch](docs/images/proto_7inch.jpg) | ![Alarm](docs/images/proto_alarm.jpg) | ![RPM board](docs/images/proto_noria_board.jpg) |
+
+### Elevator RPM board — working (November 2026)
+
+![Elevator RPM board and live rpm on the plant map](docs/images/noria_rpm_working.jpg)
+
+Three LJ12A3 12 V inductive sensors → PC817 optocouplers → ESP32 (GPIO 25/26/27) → MQTT → SDN Connect.
+A metal target passing the sensor shows up as live elevator speed (rpm) on the plant map.
+▶ [Short video](docs/images/noria_rpm_demo.mp4)
 
 ### Custom PCBs — V2 (designed, not yet manufactured)
 
@@ -95,10 +103,12 @@ More renders: [docs/HARDWARE.md](docs/HARDWARE.md)
 - SDN Connect 8.8.7 running on Raspberry Pi 5 with Touch Display 2
 - 4 ESP32 nodes online (dryer, elevators, towers, Petkus cleaner)
 - Plant designer and simulator (SDN Dev)
-- First real sensors on the dryer node — other channels still run in test mode with simulated values until their sensors are installed
+- First real sensors on the dryer node (air temperature and humidity)
+- Elevator RPM board: 3 opto-isolated inductive sensors, live rpm on the panel
+- Remaining channels still run in test mode with simulated values until their sensors are installed
 
 **In progress**
-- Elevator RPM board (opto-isolated, 12 V inductive sensors)
+- Installing the elevator RPM sensors on the real elevators
 - Replacing test channels with real sensors
 - V2 PCBs: design check and first order
 

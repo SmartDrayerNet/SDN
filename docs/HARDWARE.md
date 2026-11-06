@@ -41,6 +41,13 @@ All boards are designed in KiCad as one family. Shared blocks:
 ![Tower 20](images/pcb_tower20.jpg)
 ![Tower 20 JSN](images/pcb_tower20jsn.jpg)
 
+## Elevator RPM perfboard — working
+
+![RPM board working](images/noria_rpm_working.jpg)
+
+MT3608 boost 5 V → 12 V for the sensors, one PC817 per channel (2.2 kΩ LED resistor, 10 kΩ pull-up to 3.3 V).
+Signal is 3.3 V without metal and 0 V with metal at the sensor. ▶ [Video](images/noria_rpm_demo.mp4)
+
 ## Prototypes
 
 | | |
@@ -48,4 +55,4 @@ All boards are designed in KiCad as one family. Shared blocks:
 | ![Breadboard](images/proto_breadboard.jpg) | ![Node in box](images/proto_enclosure.jpg) |
 | Breadboard stage | First node in an IP65 box |
 | ![RPM board](images/proto_noria_board.jpg) | ![Panel](images/panel_hmi.jpg) |
-| Elevator RPM perfboard (in progress) | Pi 5 panel with the plant map |
+| Elevator RPM perfboard | Pi 5 panel with the plant map |

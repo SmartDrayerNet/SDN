@@ -7,9 +7,10 @@
 - [x] ESP32 node firmware with MQTT and OTA updates; 4 nodes online
 - [x] First real sensors on the dryer node (air temperature and humidity)
 - [x] V2 PCB family designed (Hub + 7 node boards)
+- [x] Elevator RPM board (opto-isolated 12 V inductive sensors) — working on the bench, live rpm in SDN Connect
 
 ## In progress
-- [ ] Elevator RPM board (opto-isolated 12 V inductive sensors)
+- [ ] Mounting the RPM sensors on the real elevators
 - [ ] Replacing test channels with real sensors, node by node
 - [ ] V2 PCB design check and first manufacturing order
 
