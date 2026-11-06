@@ -4,7 +4,8 @@ Smart DryerNet has two programs that share one equipment and sensor library and 
 
 | | **SDN Dev** | **SDN Connect** |
 |---|---|---|
-| Runs on | MacBook (desktop) | Raspberry Pi 5 + 10.1" Touch Display 2 at the dryer |
+| Runs on | macOS today, Windows planned | Raspberry Pi 5 + 10.1" Touch Display 2 at the dryer |
+| Opened from | the same computer | the Pi panel or any browser on the local network — Windows, macOS, Linux, Android, iOS |
 | Used by | the integrator / developer | operators, shift masters, the farm owner |
 | Purpose | draw and simulate a plant, plan sensors and ESP32 nodes | run the plant view live from real sensors, alarms, calibration, reports |
 | Output | a `.sdnproj` project file | live screens on the panel, office TV, phone and laptop |
@@ -43,6 +44,10 @@ what makes the same system fit a new site without changing code.
 - Bins fill and empty according to capacities and flow; the dryer, fans and burner have run states
 - Wrong routes (a closed gate, a full bin, a diverter set the other way) show up before anything is built
 
+**Platforms**
+- SDN Dev is a Python program with a web-based interface, so it is not tied to one operating system
+- macOS today; a Windows launcher and a single-file Windows version are planned
+
 **Export**
 - One `.sdnproj` file holds the plant, the sensors, ESP32 bindings and calibration fields
 - A project validator runs before export, so SDN Connect always receives a drawing it can display
@@ -54,7 +59,8 @@ what makes the same system fit a new site without changing code.
 ![SDN Connect panel in an IP65 enclosure](images/panel_ip65.jpg)
 
 SDN Connect is a Python server with an MQTT broker on a Raspberry Pi 5. The touch UI runs in kiosk mode on the Pi screen
-and the same pages open in any browser on the local network — office TV, phone, tablet, laptop.
+and the same pages open in any browser on the local network — office TV, phone, tablet, Windows or Mac computer.
+Nothing has to be installed on those devices; what each person can see and change depends on their role and PIN.
 
 **Main sections**
 
