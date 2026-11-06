@@ -46,6 +46,10 @@ conveyors, towers, dryers, ESP32 nodes — and a simulator. A plant is drawn onc
 
 ## Screenshots
 
+![SDN Connect panel — Raspberry Pi 5 with Touch Display 2 in an IP65 enclosure](docs/images/panel_ip65.jpg)
+
+*The SDN Connect panel: Raspberry Pi 5 + 10.1" Touch Display 2 in an IP65 enclosure, showing the live plant map.*
+
 | Live plant map | Today view on the panel |
 |---|---|
 | ![Live plant map](docs/images/hmi_live.jpg) | ![Today view](docs/images/panel_today.jpg) |
