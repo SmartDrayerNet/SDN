@@ -83,7 +83,11 @@ A metal target passing the sensor shows up as live elevator speed (rpm) on the p
 A family of boards sharing the same building blocks: 12–24 V power with protection, ESP32 DevKit in sockets
 with every pin broken out, RS485 / Modbus, and a status LED for every section.
 
-![SDN Sensor Hub V2](docs/images/pcb_hub_v2_noesp.jpg)
+![SDN Sensor Hub V2 — 3D preview](docs/images/pcb_hub_v2_3d.jpg)
+
+| Manufacturer order preview | Board drawing |
+|---|---|
+| ![Green board preview](docs/images/pcb_hub_v2_green.jpg) | ![Hub drawing](docs/images/pcb_hub_v2_noesp.jpg) |
 
 | Board | Size | Purpose |
 |---|---|---|

@@ -17,7 +17,11 @@ All boards are designed in KiCad as one family. Shared blocks:
 
 3D preview in the manufacturer's viewer:
 
-![Hub 3D](images/pcb_hub_3d_jlc.jpg)
+![Hub 3D](images/pcb_hub_v2_3d.jpg)
+
+Order preview:
+
+![Hub green](images/pcb_hub_v2_green.jpg)
 
 ## Elevator Node 3 and 5 — 176 × 120 mm
 
