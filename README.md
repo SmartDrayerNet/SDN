@@ -41,8 +41,17 @@ Smart DryerNet puts the whole plant on one touch screen, live.
  current clamps  ──┘    (Wi-Fi + MQTT, OTA)─┘     nightly backups       ──┘
 ```
 
-**SDN Dev** (desktop) is a drag-and-drop plant designer with 140+ ready parts — intake pits, elevators,
-conveyors, towers, dryers, ESP32 nodes — and a simulator. A plant is drawn once and exported to the Pi.
+## Software
+
+**SDN Dev** (MacBook) — drag-and-drop plant designer with 140+ ready parts (intake pits, elevators, conveyors, towers,
+dryers, cleaners, gates, ESP32 nodes) and a grain-flow simulator. Sensors are placed exactly where they will be mounted
+and wired to ESP32 pins. The plant is drawn once and exported to the Pi as one `.sdnproj` file.
+
+**SDN Connect** (Raspberry Pi 5) — the panel at the dryer: live plant map from real sensors, alarms, calibration centre
+(multi-point curves, moisture per crop, flow weighing test, tower geometry), reports, three roles with a permissions
+editor, nightly backups and safe updates with automatic rollback. Monitoring only — it never switches machines.
+
+Full description with screenshots: **[docs/SOFTWARE.md](docs/SOFTWARE.md)**
 
 ## Screenshots
 
