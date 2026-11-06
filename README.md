@@ -23,9 +23,12 @@ Smart DryerNet puts the whole plant on one touch screen, live.
 |---|---|
 | **Live plant map** | Grain routes, tower levels, dryer mode, temperatures, elevator speed and flow in t/h |
 | **Alarms** | Overheating, stopped elevator, full bin, lost sensor — on the panel, office TV and phone |
+| **Flow check** | Every grain connection is confirmed by sensors, or marked as stopped / operator-only / unknown |
+| **Drying advisor** | Compares outlet moisture with the target and suggests the discharge-speed correction to the operator |
+| **Incident replay** | Root cause and full chain of every incident (ESP32 → sensor → machine), replayed on the map |
 | **On-site calibration** | Multi-point calibration of every sensor from the touch screen |
 | **Reports** | Water removed, tonnes per day, shift notes, 14-day history, CSV / PDF export |
-| **Roles** | PIN-protected viewer / user / master / full-access roles |
+| **Roles** | User (no PIN), Master and Developer — with a permissions editor down to each sensor |
 
 > **Monitoring only.** Smart DryerNet reads sensors and never switches machines — the existing control stays in charge.
 
@@ -43,13 +46,14 @@ Smart DryerNet puts the whole plant on one touch screen, live.
 
 ## Software
 
-**SDN Dev** (MacBook) — drag-and-drop plant designer with 140+ ready parts (intake pits, elevators, conveyors, towers,
+**SDN Dev** (macOS, Windows planned) — drag-and-drop plant designer with 140+ ready parts (intake pits, elevators, conveyors, towers,
 dryers, cleaners, gates, ESP32 nodes) and a grain-flow simulator. Sensors are placed exactly where they will be mounted
 and wired to ESP32 pins. The plant is drawn once and exported to the Pi as one `.sdnproj` file.
 
 **SDN Connect** (Raspberry Pi 5) — the panel at the dryer: live plant map from real sensors, alarms, calibration centre
 (multi-point curves, moisture per crop, flow weighing test, tower geometry), reports, three roles with a permissions
-editor, nightly backups and safe updates with automatic rollback. Monitoring only — it never switches machines.
+editor, nightly backups and safe updates with automatic rollback. Opens in any browser on the local network —
+Windows or Mac computer, phone, tablet, office TV — with nothing to install. Monitoring only — it never switches machines.
 
 Full description with screenshots: **[docs/SOFTWARE.md](docs/SOFTWARE.md)**
 
